@@ -53,18 +53,6 @@ script_includes:
         </div>
       {% endif %}
 
-    <div class="col-lg-8 col-md-10 mx-auto">
-      <hr />
-      <script src="https://utteranc.es/client.js"
-          repo="realitsyourman/realitsyourman.github.io"
-          issue-term="pathname"
-          label="comments"
-          theme="github-dark"
-          crossorigin="anonymous"
-          async>
-      </script>
-    </div>
-
       <div class="d-flex justify-content-between">
         <!-- author(s) -->
         <span>
@@ -182,10 +170,17 @@ script_includes:
           {{ site.data.locales[lang].copyright.license.template | replace: ':LICENSE_NAME', _replacement }}
         {% endif %}
       </div>
-
       {% include post-sharing.html lang=lang %}
     </div>
     <!-- .post-tail-bottom -->
   </div>
   <!-- div.post-tail-wrapper -->
+        <script src="https://utteranc.es/client.js"
+          repo="realitsyourman/realitsyourman.github.io"
+          issue-term="pathname"
+          label="comments"
+          theme="github-dark"
+          crossorigin="anonymous"
+          async>
+      </script>
 </article>
